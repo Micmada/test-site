@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pantheon V1 Test Site</title>
+    <style>
+      :root {
+        --bg: #f8f6f2;
+        --card: #ffffff;
+        --text: #2a241f;
+        --muted: #6f665e;
+        --accent: #6b4226;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--text);
+        background: radial-gradient(circle at 10% 10%, #fff9ec, var(--bg) 45%);
+      }
+
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 60px 24px 100px;
+      }
+
+      .hero,
+      .section {
+        background: var(--card);
+        border: 1px solid #e7ddd2;
+        border-radius: 14px;
+        padding: 32px;
+        margin-bottom: 20px;
+        box-shadow: 0 8px 20px rgba(25, 20, 14, 0.08);
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 14px;
+        line-height: 1.2;
+      }
+
+      p {
+        margin: 0;
+        line-height: 1.65;
+        color: var(--muted);
+      }
+
+      .pill {
+        display: inline-block;
+        margin-bottom: 14px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--accent);
+        border: 1px solid #d9c5b2;
+        background: #fff8f2;
+      }
+    </style>
+    <script>
+      window.PantheonConfig = {
+        siteId: "mycoffeeshop",
+        apiBase: window.location.origin
+      };
+    </script>
+    <script src="/v1/pantheon.js" data-site-id="mycoffeeshop"></script>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <span class="pill">Pantheon V1 Demo</span>
+        <h1 data-pantheon="hero-heading">Welcome to Our Site</h1>
+        <p data-pantheon="hero-subtext">We make great coffee.</p>
+      </section>
+
+      <section class="section">
+        <h2 data-pantheon="about-title">About Smith's Coffee</h2>
+        <p data-pantheon="about-body">We've been here since 2010.</p>
+      </section>
+
+      <section class="section">
+        <h2 data-pantheon="hours-title">Hours</h2>
+        <p data-pantheon="hours-body">Open daily from 6:30 AM to 4:00 PM.</p>
+      </section>
+    </main>
+  </body>
+</html>
