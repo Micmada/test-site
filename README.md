@@ -1,1 +1,3 @@
+<!-- pantheon:enabled -->
+
 # test-site
